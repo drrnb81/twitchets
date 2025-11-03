@@ -23,13 +23,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
-      - name: Setup go
-        uses: actions/setup-go@v6
-        with:
-          go-version-file: go.mod
-
       - name: Run lint
         uses: golangci/golangci-lint-action@v8
+        with:
+          skip-cache: true
 
   test:
     name: Test
