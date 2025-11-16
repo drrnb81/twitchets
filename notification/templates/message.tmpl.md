@@ -19,4 +19,6 @@ Original Total Price: {{ .OriginalTotalPrice }}
 
 {{ if ne .Link "" -}}
 [Buy Link]({{ .Link }})
+
+[Checkout Link]({{ .Link }}/checkout)
 {{- end }}

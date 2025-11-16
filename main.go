@@ -20,7 +20,7 @@ import (
 //go:generate go tool oapi-codegen -config ./oapi.models.yaml ./schema/models.openapi.yaml
 //go:generate go tool oapi-codegen -config ./oapi.server.yaml ./schema/server.openapi.yaml
 
-const refetchTime = 1 * time.Minute
+const refetchTime = 20 * time.Second
 
 func init() {
 	_ = godotenv.Load()
