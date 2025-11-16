@@ -1,0 +1,4 @@
+app = "twitchets-monitor-quicker"
+
+[build]
+  dockerfile = "Dockerfile"
